@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pagina-servicos">
+
+
+    <div class="cabecalho">
+        <img src="./imagens/logo-header.png" alt="Mario Encanador">
+
+        <a href="index.html">Home</a>
+        <a href="#" onclick="mostraFormulario(); return false;">Fale Conosco</a>
+        <a href="serviços.html">Nossos Serviços</a>
+    </div>
+
+    <main class="caixa-principal">
+        <section class="caixa-info-texto">
+            <h1>Nossos Serviços</h1>
+
+            <h2>Manutenção</h2>
+            <p>Reparo de vazamentos, desentupimentos e manutenção geral de instalações hidráulicas.</p>
+
+            <h2>Instalação</h2>
+            <p>Instalação de torneiras, canos, chuveiros, vasos sanitários e sistemas hidráulicos.</p>
+        </section>
+
+        <img src="./imagens/luigi.webp" alt="Mario e Luigi" class="logo-luigi">
+    </main>
+
+    <div class="caixa_zap">
+        <a href="https://wa.me/5511973069198?text=Ol%C3%A1%2C%20preciso%20de%20um%20servi%C3%A7o." class="ZAP">
+            <img src="./imagens/whatsapp.webp" />
+        </a>
+
+    </div>
+
+    <form class="formulario">
+        <label for="nome"></label>
+        <input placeholder="Seu nome" type="text" id="nome" name="nome" required>
+
+        <label for="Telefone"></label>
+        <input placeholder="Seu telefone" type="tel" id="Telefone" name="Telefone" required>
+
+        <label for="mensagem"></label>
+        <textarea placeholder="Sua mensagem" id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Pedir Orçamento</button>
+    </form>
+
+    <div class="mascara-formulario" onclick="escondeFormulario()"></div>
+
+    <div class="rodape">
+        <p>© 2026 Encanadores Mario & Luigi. Todos os direitos reservados.</p>
+    </div>
+
+</body>
+
+<script src="scripts.js"></script>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="cabecalho">
+        <img src="./imagens/logo-header.png" alt="cabecalho-mario">
+
+        <a href="">Home</a>
+        <a href="#" onclick="mostraFormulario(); return false;">Fale Conosco</a>
+        <a href="serviços.html">Nossos Serviços</a>
+
+
+    </div>
+
+    <div class="caixa-principal">
+
+        <div class="caixa-info-texto">
+
+            <img src="./imagens/logo.png" alt="imagem da logo" class="logo-mario" />
+
+
+            <p>
+                🔧Encanadores Mario & Luigi - Resolvemos seus Problemas Hidráulicos com Estilo!
+            </p>
+
+            <p> 🔧Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
+            </p>
+
+            <button class="bt" onclick="mostraFormulario()">Entre em contato</button>
+        </div>
+
+        <div>
+            <img src="./imagens/mario.webp" alt="Imagem M/L" class="logo-luigi-mario" />
+
+        </div>
+
+    </div>
+
+
+    <div class="caixa-video">
+
+        <video src="./Videos/video.mp4" autoplay loop muted>
+        </video>
+
+        <div class="mascara-video">
+        </div>
+
+    </div>
+
+    <div class="caixa_zap">
+        <a href="https://wa.me/5511973069198?text=Ol%C3%A1%2C%20preciso%20de%20um%20servi%C3%A7o." class="ZAP">
+            <img src="./imagens/whatsapp.webp" />
+        </a>
+
+    </div>
+
+    <form class="formulario">
+        <label for="nome"></label>
+        <input placeholder="Seu nome" type="text" id="nome" name="nome" required>
+
+        <label for="Telefone"></label>
+        <input placeholder="Seu telefone" type="tel" id="Telefone" name="Telefone" required>
+
+        <label for="mensagem"></label>
+        <textarea placeholder="Sua mensagem" id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Pedir Orçamento</button>
+    </form>
+
+    <div class="mascara-formulario" onclick="escondeFormulario()"></div>
+
+    <div>
+        <div class="rodape">
+            <p>© 2026 Encanadores Mario & Luigi. Todos os direitos reservados.</p>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
